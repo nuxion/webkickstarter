@@ -1,0 +1,13 @@
+{
+  "name": "web",
+  "version": "0.1.0",
+  "description": "Simple web template",
+  "main": "index.js",
+  "repository": "https://github.com/nuxion/webstarter",
+  "author": "Xavier Petit",
+  "license": "MPL-2.0",
+  "dependencies": {},
+  "devDependencies": {
+    "esbuild": "^0.11.22"
+  }
+}
