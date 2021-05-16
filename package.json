@@ -13,7 +13,8 @@
     "eslint": "^7.26.0"
   },
   "scripts": {
-    "dev": "docker-compose start web",
-    "watch": "esbuild src/index.js --outfile=dist/js/bundle.js --target=es6 --bundle --sourcemap --watch"
+    "web": "docker-compose start web",
+    "build": "node build.js",
+    "watch": "node watch.js"
   }
 }

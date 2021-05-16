@@ -13,20 +13,20 @@ const options = {
   minify: process.env.NODE_ENV === 'production',
   sourcemap: true,
   bundle: true,
+  watch: {
+    onRebuild: function(error, result) {
+      if (error){
+        console.error('watch build failed:', error);
+      } else {
+        console.log('watch build succeeded:', result);
+      }
+    },
+  },
   outfile: './dist/bundle.js',
   plugins: [sassPlugin()],
 };
-
-fs.copyFile('./src/index.html', 'dist/index.html', (err) => {
-  if (err) throw err;
-});
-fs.copyFile('./src/assets/favicon.ico', 'dist/favicon.ico', (err) => {
-  if (err) throw err;
-});
 
 build(options).catch(err => {
   process.stderr.write(err.stderr);
   process.exit(1);
 });
-
-console.log('Files generated in dist/ folder');
