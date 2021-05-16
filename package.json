@@ -8,6 +8,12 @@
   "license": "MPL-2.0",
   "dependencies": {},
   "devDependencies": {
-    "esbuild": "^0.11.22"
+    "esbuild": "^0.11.22",
+    "esbuild-plugin-sass": "^0.5.0",
+    "eslint": "^7.26.0"
+  },
+  "scripts": {
+    "dev": "docker-compose start web",
+    "watch": "esbuild src/index.js --outfile=dist/js/bundle.js --target=es6 --bundle --sourcemap --watch"
   }
 }

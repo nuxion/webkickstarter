@@ -212,4 +212,8 @@ tags
 .history
 .ionide
 
+## Custom adds
+# direnv
+.envrc
+
 # End of https://www.toptal.com/developers/gitignore/api/vim,emacs,visualstudiocode,node
