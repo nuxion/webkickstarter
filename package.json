@@ -8,9 +8,17 @@
   "license": "MPL-2.0",
   "dependencies": {},
   "devDependencies": {
+    "alpinejs": "^2.8.2",
+    "autoprefixer": "^10.2.6",
+    "bulma": "^0.9.2",
+    "cssnano": "^5.0.4",
     "esbuild": "^0.11.22",
     "esbuild-plugin-sass": "^0.5.0",
-    "eslint": "^7.26.0"
+    "eslint": "^7.26.0",
+    "fs-extra": "^10.0.0",
+    "postcss": "^8.3.0",
+    "postcss-import": "^14.0.2",
+    "tailwindcss": "^2.1.2"
   },
   "scripts": {
     "web": "docker-compose start web",

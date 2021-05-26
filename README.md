@@ -22,6 +22,15 @@ Tools used:
     - SASS, SCSS compilation
     - Nginx, Docker
 
+## Features
+
+- Alpinejs 
+- tailwind.css
+- automatic build.
+- production tree sheeking (esbuild) and minifying(cssnano).
+- nginx web server
+- Watch script. 
+
 ## How it works
 
 ### Build process

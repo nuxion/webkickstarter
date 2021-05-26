@@ -1,0 +1,13 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+/* CHECKBOX TOGGLE SWITCH */
+/* @apply rules for documentation, these do not work as inline style */
+.toggle-checkbox:checked {
+  right: 0;
+  border-color: #7C3AED;
+}
+.toggle-checkbox:checked + .toggle-label {
+  background-color: #7C3AED; 
+}
